@@ -1,0 +1,229 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BBC News project Rework</title>
+        <style>
+            #topbar{
+                width:90%;
+                height:40px;
+                margin:0 auto;
+                background-color:#FDFEFE;
+            }
+            body{
+                padding:0;
+                margin:0;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            #bbclogo{
+                width:80px;
+                height:30px;
+                margin-top:5px;
+                float:left;
+                margin-right:10px;
+            }
+            .topbar-section{
+                float:left;
+                border-left:2px solid #CCCCCC;
+                height:40px;
+            }
+            #signin-logo{
+                height:20px;
+                width:20px;
+                margin:10px;
+                float:left;
+            
+            }
+            #signin{
+                margin:10px 5px;
+                float:left;
+                font-weight:bold;
+                margin-right:30px;
+            }
+            .topbar-options{
+                font-weight:bold;
+                margin:10px 15px;
+            }
+            #downarrow{
+                width:20px;
+                height:20px;
+                margin:10px 15px;
+                float:left;
+            }
+            #searchbar{
+                background-color:#EAECEE;
+                height:22px;
+                margin:9px 0px 9px 10px;
+                font-weight:bold;
+                font-size:14px;
+                border:none;
+            }
+            #mg-glass{
+                height:24px;
+                width:20px;
+                margin:9px 10px 9px 0px;
+                float:left;
+            }
+            #div1{
+                width:100%;
+                height:100px;
+                background-color: #D11E08;
+                float:left;
+            }
+            h1{
+                position:relative;
+                left:50px;
+                bottom:10px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:37px;
+                font-weight:lighter;
+                color:white;
+                font-weight:250px;
+            }
+            #section{
+                width:85%;
+                height:30px;
+                position:relative;
+                left:50px;
+                bottom:25px;
+                margin:0px;
+                color:white;
+            }
+            .section-options{
+                height:16px;
+                border-right:1px solid #999999;
+                font-weight:bold;
+                float:left;
+                padding:7px 10px;
+            }
+            #more-part{
+                font-weight:bold;
+                padding:7px 10px;
+                float:left;
+                color:white;
+            }
+
+            #heading{
+                font-weight:bold;
+                position:relative;
+                left:50px;
+                top:20px;
+                float:left;
+            }
+
+            #heading h2{
+                position:relative;
+                left:10px;
+                bottom:20px;
+                float:left;
+                border-bottom:3px solid #D11E08;
+                border-right:1px solid #999999;
+                padding-right:10px;
+            }
+            #heading a{
+                position:relative;
+                left:20px;
+                top:5px;
+                font-weight:lighter;
+                text-decoration:none;
+                color: #999999;
+                display:inline;
+            }
+
+            #heading a:hover{
+                border-bottom:3px solid  #D11E08;
+            }
+            #main-news{
+                border:1px solid black;
+                width:1300px;
+                height:560px;
+                position:relative;
+                left:70px;
+                top:165px;
+            }
+            #section-1{
+                width:450px;
+                height:360px;
+                margin-top:10px 10px 190px 10px;
+                border:1px solid black;
+                position:absolute;
+            }
+            #section-2{
+                border:1px solid black;
+                width:810px;
+                height:500px;
+                margin:30px 10px;  
+                float:left;
+            }
+        </style>
+    </head>
+<body>
+    <div id="topbar">
+        <img src="bbc-logo.jpg" alt="bbc logo" id="bbclogo">
+        <div id="topbar-option1" class="topbar-section">
+            <img src="signin-logo.png" alt="signin-logo" id="signin-logo"><span id="signin">Sign in</span><img>
+            
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Home</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">News</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Sport</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Reel</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Worklife</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Travel</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Future</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">Culture</div>
+        </div>
+        <div class="topbar-section">
+            <div class="topbar-options">More</div>
+        </div>
+        <img id="downarrow" src="downarrow.png" alt="downarrow">
+        <div class="topbar-section">
+            <input type="text" id="searchbar" value="search">
+
+        </div>
+        <input type="image" src="magnifying-glass.png" alt="magnifying-glass" id="mg-glass">
+        
+    </div>
+    <div id="div1">
+        <h1>News</h1>
+        <div id="section">
+          <div class="section-options">Home</div>
+          <div class="section-options">Coronavirus</div>
+          <div class="section-options">Video</div>
+          <div class="section-options">World</div>
+          <div class="section-options">Asia</div>
+          <div class="section-options">UK</div>
+          <div class="section-options">Business</div>
+          <div class="section-options">Tech</div>
+          <div class="section-options">Science</div>
+          <div class="section-options">Stories</div>
+          <div class="section-options">Entertainment & Arts</div>
+          <div class="section-options">Health</div>
+          <div class="section-options">World News TV</div>
+          <div class="section-options">In Pictures</div>
+          <div id="more-part">More</div>
+        </div>
+    </div>
+    <div id="heading">
+        <div><h2>Coronavirus Pandemic</h2><a href="https://www.bbc.com/news/have_your_say">Your Coronavirus Stories</a></div>
+    </div>
+    <div id="main-news">
+        <div id="section-1"></div>
+        <div id="section-2"></div>
+    </div>
+</body>
+</html>

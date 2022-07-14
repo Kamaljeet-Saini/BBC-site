@@ -1,0 +1,878 @@
+<!doctype html>
+<html>
+    <head>
+        <title>BBC News project</title>
+        <style>
+            #topbar{
+                width:90%;
+                height:40px;
+                margin:0 auto;
+                background-color:#FDFEFE;
+            }
+            body{
+                padding:0;
+                margin:0;
+                height:auto;
+                font-family:Arial, Helvetica, sans-serif;
+            }
+            html{
+                height:50%;
+            }
+            #bbclogo{
+                width:80px;
+                height:30px;
+                margin-top:5px;
+                float:left;
+                margin-right:10px;
+            }
+            .topbar-section{
+                float:left;
+                border-left:2px solid #CCCCCC;
+                height:40px;
+            }
+            #signin-logo{
+                height:20px;
+                width:20px;
+                margin:10px;
+                float:left;
+            
+            }
+            #signin{
+                margin:10px 5px;
+                float:left;
+                font-weight:bold;
+                margin-right:30px;
+            }
+            .topbar-options{
+                font-weight:bold;
+                margin:10px 15px;
+            }
+            #downarrow{
+                width:20px;
+                height:20px;
+                margin:10px 15px;
+                float:left;
+            }
+            #searchbar{
+                background-color:#EAECEE;
+                height:22px;
+                margin:9px 0px 9px 10px;
+                font-weight:bold;
+                font-size:14px;
+                border:none;
+            }
+            #mg-glass{
+                height:24px;
+                width:20px;
+                margin:9px 10px 9px 0px;
+                float:left;
+            }
+            #div1{
+                width:100%;
+                height:100px;
+                background-color: #D11E08;
+                float:left;
+            }
+            h1{
+                position:relative;
+                left:50px;
+                bottom:10px;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:37px;
+                font-weight:lighter;
+                color:white;
+                font-weight:250px;
+            }
+            #section{
+                width:85%;
+                height:30px;
+                position:relative;
+                left:50px;
+                bottom:25px;
+                margin:0px;
+                color:white;
+            }
+            .section-options{
+                height:16px;
+                border-right:1px solid #999999;
+                font-weight:bold;
+                float:left;
+                padding:7px 10px;
+            }
+            #more-part{
+                font-weight:bold;
+                padding:7px 10px;
+                float:left;
+                color:white;
+            }
+
+            #heading{
+                font-weight:bold;
+                position:relative;
+                left:50px;
+                top:20px;
+                float:left;
+            }
+
+            #heading h2{
+                position:relative;
+                left:10px;
+                bottom:20px;
+                float:left;
+                border-bottom:3px solid #D11E08;
+                border-right:1px solid #999999;
+                padding-right:10px;
+            }
+            #heading a{
+                position:relative;
+                left:20px;
+                top:5px;
+                font-weight:lighter;
+                text-decoration:none;
+                color: #999999;
+                display:inline;
+            }
+
+            #heading a:hover{
+                border-bottom:3px solid  #D11E08;
+            }
+
+            #news-1{
+                width:500px;
+                height:450px;
+                position:relative;
+                left:50px;
+                top:180px;
+            }
+
+            #coronavirus-testing{
+                width:450px;
+                height:200px;
+                position:relative;
+                left:25px;
+                bottom:160px;
+            }
+            #news-1-link1{
+                text-decoration:none;
+                color:black;
+                font-weight:bold;
+                position:relative;
+                bottom:170px;
+                left:5px;
+            }
+            #news-1-link1 :hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-1 p{
+                position:relative;
+                bottom:180px;
+                color:#999999;
+            }
+            #clock-icon{
+                width: 62px;
+                height:28px;
+                position:relative;
+                bottom:190px;
+                left:10px;
+                border-right:1px solid #999999;
+            }
+            #india{
+                text-decoration:none;
+                color:#999999;
+                font-size:16px;
+                position: relative;
+                bottom:200px;
+                left:10px;
+            }
+            #india:hover{
+                text-decoration:underline;
+                color:#0BD7F5;
+            }
+            
+            #news-2{
+                width:250px;
+                height:270px;
+                position:relative;
+                left:560px;
+                bottom:272px;
+            }
+            #coronavirus-testing1{
+                width:230px;
+                height:100px;
+                position:relative;
+                left:10px;
+                top:5px;
+            }
+            #news-2-link1{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                top:5px;
+                left:8px;
+                font-weight:bold;
+            }
+            #news-2-link1:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-2 p{
+                position:relative;
+                left:7px;
+            }
+            #day4-clock-icon{
+                position:relative;
+                left:9px;
+                bottom:10px;
+            }
+            #china{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                bottom:20px;
+                left:5px;
+            }
+            #china:hover{
+                color:#0BD7F5;
+                text-decoration:underline;
+            }
+            
+            #news-3{
+                width:250px;
+                height:270px;
+                position:relative;
+                left:830px;
+                bottom:543px;
+            }
+            #pills{
+                width:230px;
+                height:100px;
+                position:relative;
+                left:10px;
+                top:5px;
+            }
+            #news-3-link1{
+                text-decoration:none;
+                font-weight:bold;
+                color:#999999;
+                position:relative;
+                left:6px;
+                top:5px;
+            }
+            #news-3-link1:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-3 p{
+                position:relative;
+                left:7px;
+            }
+            #july-25-2021-icon{
+                position:relative;
+                left:8px;
+                top:5px;
+            }
+            #news-3-link2{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                left:7px;
+                bottom:3px;
+            }
+            #news-3-link2:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-4{
+                width:250px;
+                height:270px;
+                position:relative;
+                left:1100px;
+                bottom:815px;
+            }
+            #youtube{
+                width:230px;
+                height:100px;
+            }
+            #news-4-link1{
+                text-decoration:none;
+                color:#999999;
+                font-weight:bold;
+                position:relative;
+                left:7px;
+                top:5px;
+            }
+            #news-4-link1:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-4 p{
+                position:relative;
+                left:7px;
+                bottom:3px;
+            }
+            #day2-clockicon{
+                position:relative;
+                bottom:11px;
+                left:8px;
+            }
+            #news-4-link2{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                bottom:20px;
+                left:7px;
+            }
+            #news-4-link2:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+
+            #news-5{
+                width:250px;
+                height:270px;
+                position:relative;
+                left:560px;
+                bottom:800px;
+            }
+            #oxygen-monitors{
+                width:230px;
+                height:100px;
+                padding-top:5px;
+                padding-left:10px;
+            }
+            #news-5-link1{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                top:5px;
+                left:10px;
+                font-weight:bold;
+            }
+            #news-5-link1:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-5 p{
+                position:relative;
+                left:7px;
+                top:2px;
+            }
+            #day3-clockicon{
+                position:relative;
+                left:3px;
+                bottom:6px;
+            }
+            #news-5-link2{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                bottom:13px;
+            }
+            #news-5-link2:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+
+            #news-6{
+                width:250px;
+                height:270px;
+                position:relative;
+                left:830px;
+                bottom:1072px;
+            }
+            #vaxx-deaths{
+                width:230px;
+                height:100px;
+                padding-top:5px;
+                padding-left:10px;
+            }
+            #news-6-link1{
+                text-decoration:none;
+                color:#999999;
+                font-weight:bold;
+                position:relative;
+                left:7px;
+                top:5px;
+            }
+            #news-6-link1:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-6 p{
+                position:relative;
+                left:7px;
+                top:1px;
+            }
+            #july_25_2021-clockicon{
+                position:relative;
+                bottom:15px;
+                left:5px;
+            }
+            #news-6-link2{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                bottom:25px;
+                left:5px;
+            }
+            #news-6-link2:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-7{
+                width:250px;
+                height:270px;
+                position:relative;
+                left:1100px;
+                bottom:1345px;
+            }
+            #corona-vaccine{
+                width:230px;
+                height:100px;
+                padding-top:5px;
+                padding-left:10px;
+            }
+            #news-7-link1{
+                text-decoration:none;
+                color:#999999;
+                font-weight:bold;
+                position:relative;
+                left:8px;
+                top:5px;
+            }
+            #news-7-link1:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #news-7 p{
+                position:relative;
+                left:7px;
+                top:5px;
+            }
+            #news-7-link2{
+                text-decoration:none;
+                color:#999999;
+                position:relative;
+                bottom:5px;
+                left:3px;
+            }
+            #news-7-link2:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+
+            #div2 h2{
+                font-weight:normal;
+                margin-left:60px;
+                position:relative;
+                bottom:1300px;
+                font-size:30px;
+            }
+            #div4 h2{
+                font-weight:normal;
+                margin-left:60px;
+                position:relative;
+                bottom:800px;
+                font-size:30px;
+            }
+            #div3{
+                border-top:2px solid black;
+                width:70%;
+                position:relative;
+                bottom:1340px;
+                left:370px;
+            }
+            .blocks{
+                width:250px;
+                height:200px;
+                float:left;
+                position:relative;
+                bottom:1300px;
+            }
+            #block1{
+                margin-left:100px;
+            }
+            #block1 img{
+                width:230px;
+                height:150px;
+                padding-left:10px;
+                padding-top:5px;
+
+            }
+            #block1 a{
+                color:#999999;
+                font-weight:bold;
+                text-decoration:none;
+                position:relative;
+                left:7px;
+            }
+            #block1 a:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #block2 img{
+                width:230px;
+                height:150px;
+                padding-left:10px;
+                padding-top:5px;
+
+            }           
+            #block2 a{
+                color:#999999;
+                font-weight:bold;
+                text-decoration:none;
+                position:relative;
+                left:7px;
+            }
+            #block2 a:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #block3 img{
+                width:230px;
+                height:150px;
+                padding-left:10px;
+                padding-top:5px;
+            }
+            #block3 a{
+                color:#999999;
+                font-weight:bold;
+                text-decoration:none;
+                position:relative;
+                left:7px;
+            }
+            #block3 a:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #block4 img{
+                width:230px;
+                height:150px;
+                padding-left:10px;
+                padding-top:5px;
+
+            }
+            #block4 a{
+                color:#999999;
+                font-weight:bold;
+                text-decoration:none;
+                position:relative;
+                left:7px;
+            }
+            #block4 a:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+            #block5 img{
+                width:230px;
+                height:150px;
+                padding-left:10px;
+                padding-top:5px;
+
+            }
+            #block5 a{
+                color:#999999;
+                font-weight:bold;
+                text-decoration:none;
+                position:relative;
+                left:7px;
+            }
+            #block5 a:hover{
+                text-decoration:underline;
+                color:#18ABED;
+            }
+
+            #div4 h2{
+                font-weight:normal;
+                margin-left:60px;
+                float:left;
+                position:relative;
+                bottom:1300px;
+                font-size:30px;
+            }
+            #div5{
+                border-bottom:2px solid black;
+                width:78%;
+                position:relative;
+                bottom:1260px;
+                left:8px;
+                float:left;
+            }
+            .blocks1{
+                width:1200px;
+                height:150px;
+                border:none;
+                float:left;
+                position:relative;
+                bottom:1300px;
+                left :100px;
+            }
+            #block10{
+                width:250px;
+                height:300px;
+                border:1px solid black;
+            }
+            #div6{
+                width:100%;
+                height:450px;
+                border:1px solid black;
+                position:relative;
+                bottom:750px;
+                background-image:url('nature.jpg');
+            }
+            #reel{
+                width:100%;
+                text-align:left;
+                color:white;
+                font-weight:bold;
+                font-size:30px;
+                position:relative;
+                bottom:470px;
+                float:left;
+                margin-left:100px;
+            }
+            #reel a{
+                text-decoration-line:none;
+                color:white;
+            }
+            #reel a:hover{
+                text-decoration-line:underline;
+            }
+            .blocks2{
+                width:400px;
+                height:250px;
+                position:relative;
+                bottom:450px;
+                left:80px;
+                float:left;
+            }
+            video:hover{
+                width:380px;
+                height:240px;
+                margin:10px 10px;
+            }
+            .blocks3{
+                width:95%;
+                height:350px;
+                position:relative;
+                float:left;
+                left:50px;
+                bottom:1100px;
+                border-spacing:10px;
+                border:1px solid black;
+                margin-bottom:0px;
+                padding-bottom:0px;
+            }
+            .blocks3 a{
+                text-decoration-line:none;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color:black;
+                font-size:large;
+                font-weight:bold;
+            }
+            .blocks3 th, td {
+                padding: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="topbar">
+            <img src="bbc-logo.jpg" alt="bbc logo" id="bbclogo">
+            <div id="topbar-option1" class="topbar-section">
+                <img src="signin-logo.png" alt="signin-logo" id="signin-logo"><span id="signin">Sign in</span><img>
+                
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Home</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">News</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Sport</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Reel</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Worklife</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Travel</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Future</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">Culture</div>
+            </div>
+            <div class="topbar-section">
+                <div class="topbar-options">More</div>
+            </div>
+            <img id="downarrow" src="downarrow.png" alt="downarrow">
+            <div class="topbar-section">
+                <input type="text" id="searchbar" value="search">
+
+            </div>
+            <input type="image" src="magnifying-glass.png" alt="magnifying-glass" id="mg-glass">
+            
+        </div>
+        <div id="div1">
+            <h1>News</h1>
+            <div id="section">
+              <div class="section-options">Home</div>
+              <div class="section-options">Coronavirus</div>
+              <div class="section-options">Video</div>
+              <div class="section-options">World</div>
+              <div class="section-options">Asia</div>
+              <div class="section-options">UK</div>
+              <div class="section-options">Business</div>
+              <div class="section-options">Tech</div>
+              <div class="section-options">Science</div>
+              <div class="section-options">Stories</div>
+              <div class="section-options">Entertainment & Arts</div>
+              <div class="section-options">Health</div>
+              <div class="section-options">World News TV</div>
+              <div class="section-options">In Pictures</div>
+              <div id="more-part">More</div>
+            </div>
+        </div>
+        
+        <div id="heading">
+            <div><h2>Coronavirus Pandemic</h2><a href="https://www.bbc.com/news/have_your_say">Your Coronavirus Stories</a></div>
+            
+        </div>
+        <div id="news-1">
+            <img id="coronavirus-testing" src="coronavirus-testing.jpg">
+            <a id="news-1-link1" href="https://www.bbc.com/news/world-asia-india-58054124"><h2>The Indian state which is a Covid mystery</h2></a>
+            <p>Covid-19 cases continue to rise in kerela despite the waning of second wave elsewhere in India</p>
+            <a href="https://www.bbc.com/news/world-asia-india-58054124" id="news-1-link2"><img id="clock-icon" src="clock.png"></a>
+            <a href="https://www.bbc.com/news/world/asia/india" id="india">India</a>
+        </div>
+
+        <div id="news-2">
+            <img id="coronavirus-testing1" src="coronavirus-testing1.jpeg">
+            <a href="https://www.bbc.com/news/world-asia-china-58021911" id="news-2-link1">China battles worst Covid outburst since Wuhan</a>
+            <p>Almost 200 people have been infected since the virus was first detected at Nanjing airpost on 20 july</p>
+            <a href="https://www.bbc.com/news/world-asia-china-58021911"><img id="day4-clock-icon" src="4d-clock-icon.png"></a>
+            <a href="https://www.bbc.com/news/world/asia/china" id="china">China</a>
+        </div>
+
+        <div id="news-3">
+            <img id="pills" src="pills.jpeg">
+            <a id="news-3-link1" href="https://www.bbc.com/news/health-57553602">Could Covid vaccine be taken as a pill?</a>
+            <p>Researchers are looking at easier ways for people to get the vaccine, including via inhalers and tablets.</p>
+            <a href="https://www.bbc.com/news/health-57553602"><img src="july-25-2021.png" id="july-25-2021-icon"></a>
+            <a href="https://www.bbc.com/news/health" id="news-3-link2">Health</a>
+        </div>
+
+        <div id="news-4">
+            <img id="youtube" src="youtube.jpg">
+            <a href="" id="news-4-link1">YouTube suspends Sky News Australia over Covid</a>
+            <p>The digital giant bans the channel from uploading new content for a week over misinformation breaches</p>
+            <a href=""><img  id="day2-clockicon" src="day2-clockicon.png"></a>
+            <a href="" id="news-4-link2">Australia</a>
+        </div>
+        <div id="news-5">
+            <img id="oxygen-monitors" src="oxygen-monitors.jpg">
+            <a href="" id="news-5-link1">Concerns over use of oxygen monitors over darker skin</a>
+            <p>Pulse oximeters, which spot falling oxygen levels, may work less well on darker skin, experts warn.</p>
+            <a href=""><img id="day3-clockicon" src="day3-clockicon.png"></a>
+            <a href="" id="news-5-link2">Health</a>
+        </div>
+        <div id="news-6">
+            <img id="vaxx-deaths" src="vaxx-deaths.png">
+            <a href="" id="news-6-link1">Four misleading Covid claims fact-checked</a>
+            <p>Debunking claims shared widely on social media about cremations in the UK and US vaccine statistics.</p>
+            <a href=""><img id="july_25_2021-clockicon" src="july_25_2021.png"></a>
+            <a href="" id="news-6-link2">Reality Check</a>
+        </div>
+        <div id="news-7">
+            <img id="corona-vaccine" src="corona-vaccine.cms">
+            <a id="news-7-link1" href="">Fauci says US going in wrong direction on Covid</a>
+            <p>President Joe Biden's top medical adviser says cases are rissing in areas with low vaccination rates.</p>
+            <a href=""><img id="july_25_2021-clockicon" style="position:relative;top:3px;" src="july_25_2021.png"></a>
+            <a href="" id="news-7-link2">US & Canada</a>
+        </div>
+        <div id="section1">
+            <div id="div2">
+                <h2>Coronavirus explained</h2>
+                <div id="div3"></div>
+            </div>
+            <div>
+                <div id="block1" class="blocks"><img src="section1-img1.jpg"><a href="">Scientists say too early to tell  the risk of Delta plus variant</a></div>
+                <div id="block2" class="blocks"><img src="section1-img2.jpg"><a href="">Concerns over superbug among India Covid patients</a></div>
+                <div id="block3" class="blocks"><img src="section1-img3.jpeg"><a href="">Why is India struggling to get enough vaccine</a></div>
+                <div id="block4" class="blocks"><img src="section1-img4.jpg"><a href="">Has India's deadly second wave peaked?</a></div>
+                <div id="block5" class="blocks"><img src="section1-img5.jpg"><a href="">Different jobs given to 20 in India vaccine mix up</a></div>
+            </div>
+        </div>
+        <div id = "section3">
+            <div id = "div4">
+                <h2>Most Watched</h2>
+                <div id="div5"></div>
+            </div>
+            <table class = "blocks1" id="table1">
+                <tr>
+                    <!--<td><a href="">The afghan refugee commanding ukrainian troops.</a></td>
+                    <td><a href="">Helsinki's new building held up by trees.</a></td>
+                    <td><a href="">Making art from sunlight.</a></td>
+                    <td><a href="">Wildfire breaks out across parts of Portugal.</a></td>
+                    <td><a href = "">One-minute world news.</a></td>-->
+                    <td><a href = ""><img src="most_watched1.png" width = "250px" height = "200px"></a></td>
+                    <td><a href = ""><img src="most_watched2.png" width = "250px" height = "200px"></a></td>
+                    <td><a href = ""><img src="most_watched3.png" width = "250px" height = "200px"></a></td>
+                    <td><a href = ""><img src="most_watched4.png" width = "250px" height = "200px"></a></td>
+                    <td><a href = ""><img src="most_watched5.png" width = "250px" height = "200px"></a></td>
+                </tr>
+            </table>
+        </div>
+        <div id = "section4">
+            <div id = "div6">
+                <div id="reel"><a href=""><p>REEL - The most amazing videos from the BBC.</p></a></div>
+                <div class = "blocks2"><video width = "350" height = "230" style="margin:25px 50px;" controls><source src="video4.mp4" type="video/mp4"></video></div>
+                <div class = "blocks2"><video width = "350" height = "230" style="margin:25px 50px;" controls><source src="video5.mp4" type="video/mp4"></video></div>
+                <div class = "blocks2"><video width = "350" height = "230" style="margin:25px 50px;" controls><source src="video6.mp4" type="video/mp4"></video></div>
+            </div>
+        <table class = "blocks3">
+            <tr>
+                <th colspan = "3" style="text-align:left;font-family:'Times New Roman', Times, serif;font-weight:bold;font-size:50px;"><marquee direction = "left" width = "50%">Most Read</marquee></th>
+            </tr>
+            <tr>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">1 </span>James Webb takes super sharp view of early cosmos</a></td>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">2 </span>Sir Mo Farah reveals he was trafficked to UK as child</a></td>
+                <th rowspan="5"><a href=""><img src="adv.png" width = "250" height = "300"></a></th>
+            </tr>
+            <tr>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">3 </span>Ukraine "war trophies" go on display in Prague</a></td>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">4 </span>How india's fake cricket league ran for russian punters</a></td>
+            </tr>
+            <tr>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">5 </span>India's population on track to overtake China's</a></td>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">6 </span>India food wrap's mystery horse-rider identified</a></td>
+            </tr>
+            <tr>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">7 </span>Texas woman argues unborn baby counts as passenger</a></td>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">8 </span>After Roe, anti-abortion activists eye new target</a></td>
+            </tr>
+            <tr>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">9 </span>Shri lanka's opposition chief wants to replace Rajapaksa</a></td>
+                <td><a href=""><span style="color:rgba(255, 0, 0, 0.737);font-size:40px;font-weight:20px">10 </span>Germany fears russia gas cut may become permanent</a></td>
+            </tr>
+        </table>
+        <div style="width:100%;height:200px;border:1px solid black;margin-top:0px;"></div>
+            <!--<div id="div4">
+                <h2>The World's Hotspots</h2>
+                <div id="div5"></div>
+            </div>
+            <div>
+                <div class="blocks1" id="block6"></div>
+                <div class="blocks1" id="block7"></div>
+                <div class="blocks1" id="block8"></div>
+                <div class="blocks1" id="block9"></div>
+                <div id="block10"></div>
+            </div>-->
+
+    </body>
+</html>
